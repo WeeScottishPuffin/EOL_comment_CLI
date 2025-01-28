@@ -1,6 +1,6 @@
 import argparse
 import os
-
+os.system("")
 default_comments = {
     ".c":"//",
     ".cpp":"//",
@@ -14,7 +14,7 @@ default_comments = {
 
 parser = argparse.ArgumentParser(description="CLI Tool to apply my commenting style",prog="CEOL")
 parser.add_argument("filename")
-parser.add_argument("-cs","--comment_start",action='store',required=False)
+parser.add_argument("-cs","--comment_start",action='store',required=False,metavar=" The character which precedes all comments. e.g. \'//\' in c-sharp")
 
 args = parser.parse_args()
 print(args)
