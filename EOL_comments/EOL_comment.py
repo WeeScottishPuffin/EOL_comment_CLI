@@ -14,7 +14,7 @@ default_comments = {
 
 parser = argparse.ArgumentParser(description="CLI Tool to apply my commenting style",prog="CEOL")
 parser.add_argument("filename")
-parser.add_argument("-cs","--comment_start",required=False)
+parser.add_argument("-cs","--comment_start",action='store',required=False)
 
 args = parser.parse_args()
 print(args)
